@@ -429,6 +429,34 @@ if ( ! class_exists( 'ARM_social_feature_Lite' ) ) {
             }
 		}
 
+		function growth_plugins_content()
+		{
+			$armember_upgrade_to_pro_page = get_transient("arm_growth_plugins_listing_data_page");
+			if( false === $armember_upgrade_to_pro_page ) {
+				$urltopost = 'https://www.armemberplugin.com/';
+				$raw_response = wp_remote_post($urltopost, array(
+                    'method' => 'POST',
+                    'timeout' => 45,
+                    'redirection' => 5,
+                    'httpversion' => '1.0',
+                    'blocking' => true,
+                    'headers' => array(),
+                    'body' => array('get_growth_plugins_content' => 1),
+                    'cookies' => array()
+                        )
+                );
+
+				if ( is_wp_error( $raw_response ) || $raw_response['response']['code'] != 200 ) {
+					return 0;
+				} else {
+					set_transient("arm_growth_plugins_listing_data_page", $raw_response['body'], WEEK_IN_SECONDS);
+					return isset( $raw_response['body'] ) ? $raw_response['body'] : 0;
+				}
+			} else {
+                return $armember_upgrade_to_pro_page;
+            }
+		}
+
 		function arm_install_plugin_install_status( $api, $loop = false ) {
 			// This function is called recursively, $loop prevents further loops.
 			if ( is_array( $api ) ) {

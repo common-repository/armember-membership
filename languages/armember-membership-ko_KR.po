@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ARMember Lite - Membership Plugin v4.0.47\n"
+"Project-Id-Version: ARMember Lite - Membership Plugin v4.0.48\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-21 08:55+0000\n"
-"PO-Revision-Date: 2024-10-23 09:50:41+0000\n"
+"PO-Revision-Date: 2024-10-30 04:10:40+0000\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "MIME-Version: 1.0\n"
@@ -14661,7 +14661,7 @@ msgstr "사용자 %s이%s 평가판 기간이 아닌 경우"
 msgid "No email template found."
 msgstr "이메일 템플릿을 찾을 수 없습니다."
 
-#: core/views/arm_growth_plugins.php:74
+#: core/views/arm_growth_plugins.php:97
 #@ armember-membership
 msgid "Upgrade to ARMember Pro"
 msgstr "ARMember Pro로 업그레이드"
@@ -15727,6 +15727,6 @@ msgstr "Fusion Builder 또는 Avada Theme을 설치하고 이 애드온을 활�
 #. translators: plugin header field 'Version'
 #: armember-membership.php:0
 #@ armember-membership
-msgid "4.0.47"
-msgstr "4.0.47"
+msgid "4.0.48"
+msgstr "4.0.48"
 

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ARMember Lite - Membership Plugin v4.0.47\n"
+"Project-Id-Version: ARMember Lite - Membership Plugin v4.0.48\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-21 08:59+0000\n"
-"PO-Revision-Date: 2024-10-23 09:51:01+0000\n"
+"PO-Revision-Date: 2024-10-30 04:10:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -14661,7 +14661,7 @@ msgstr "Als gebruiker %sniet in%s proefperiode zit"
 msgid "No email template found."
 msgstr "Geen e-mailsjabloon gevonden."
 
-#: core/views/arm_growth_plugins.php:74
+#: core/views/arm_growth_plugins.php:97
 #@ armember-membership
 msgid "Upgrade to ARMember Pro"
 msgstr "Upgrade naar ARMember Pro"
@@ -15727,6 +15727,6 @@ msgstr "Installeer Fusion Builder of Avada Theme en probeer deze add-on te activ
 #. translators: plugin header field 'Version'
 #: armember-membership.php:0
 #@ armember-membership
-msgid "4.0.47"
-msgstr "4.0.47"
+msgid "4.0.48"
+msgstr "4.0.48"
 

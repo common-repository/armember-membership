@@ -654,7 +654,7 @@ if(version_compare($arm_lite_newdbversion,'4.0.36','<'))
     }
 }
 
-$arm_lite_newdbversion = '4.0.47';
+$arm_lite_newdbversion = '4.0.48';
 update_option( 'arm_lite_new_version_installed', 1 );
 update_option( 'armlite_version', $arm_lite_newdbversion );
 

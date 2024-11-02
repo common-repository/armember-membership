@@ -1,3 +1,26 @@
+<?php 
+	global $arm_social_feature;
+	$growth_plugins_content = $arm_social_feature->growth_plugins_content();
+
+	$payment_gateways_addon = '19+';
+	$total_addons = '46+';
+	$total_inbuilt_addon = '54+';
+	$discount = '82%';
+	$downloads = '2,75,000+';
+	$support_period = '6 Months';
+	if( !empty($growth_plugins_content) ) {
+		$growth_plugins_content_data = json_decode($growth_plugins_content, true);
+		if( !empty($growth_plugins_content_data) && is_array($growth_plugins_content_data) ) {
+			$payment_gateways_addon = isset($growth_plugins_content_data['payment_gateways_addon']) ? $growth_plugins_content_data['payment_gateways_addon'] : $payment_gateways_addon;
+			$total_addons = isset($growth_plugins_content_data['total_addons']) ? $growth_plugins_content_data['total_addons'] : $total_addons;
+			$total_inbuilt_addon = isset($growth_plugins_content_data['total_inbuilt_addon']) ? $growth_plugins_content_data['total_inbuilt_addon'] : $total_inbuilt_addon;
+			$discount = isset($growth_plugins_content_data['discount']) ? $growth_plugins_content_data['discount'] : $discount;
+			$downloads = isset($growth_plugins_content_data['downloads']) ? $growth_plugins_content_data['downloads'] : $downloads;
+			$support_period = isset($growth_plugins_content_data['support_period']) ? $growth_plugins_content_data['support_period'] : $support_period;
+		}
+	}
+?>
+
 <div class="wrap arm_page arm_feature_settings_main_wrapper arm_groth_plugin_page">
 	<div class="content_wrapper arm_feature_settings_content" id="content_wrapper">
 		<div class="page_title"></div>
@@ -35,12 +58,12 @@
 										<span class="arm-gt-one-time-sec-first-img"></span>
 										<div class="arm-gt-one-time-sec-content">
 											<h4 class="arm-gt-one-time-sec-heding">Addon Bundle Pack</h4>
-											<p class="arm-gt-one-time-sec-disc">@ 81% Discount</p>
+											<p class="arm-gt-one-time-sec-disc">@ <?php echo sanitize_text_field( $discount ); ?> Discount</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="arm-gt-heading-inner-heading"> <span></span>1,00,000+ Users ❤️ ARMember <span class="arm-gt-orange-line"></span></div>					
+							<div class="arm-gt-heading-inner-heading"> <span></span><?php echo sanitize_text_field( $downloads ); ?> Users ❤️ ARMember <span class="arm-gt-orange-line"></span></div>					
 						</div>
 					</div>
 				</div>
@@ -52,17 +75,17 @@
 							</div>
 							<ul class="arm-feature-list-cls">
 								<li class="arm-feature-list-li"> Pay Per Post (Paid Post) </li>
-								<li class="arm-feature-list-li"> 6 Free Payment Gateways </li>
+								<li class="arm-feature-list-li"> <?php echo sanitize_text_field( $payment_gateways_addon ); ?> Payment Gateways </li>
 								<li class="arm-feature-list-li"> Built-in Live Form Builder </li>
 								<li class="arm-feature-list-li"> Drip Content Feature Support </li>
 								<li class="arm-feature-list-li"> Unlimited Membership Plans </li>
-								<li class="arm-feature-list-li"> Powerful 36+ External Addons </li>
+								<li class="arm-feature-list-li"> Powerful <?php echo sanitize_text_field( $total_addons ); ?> External Addons </li>
 								<li class="arm-feature-list-li"> Advanced Content Restriction </li>
-								<li class="arm-feature-list-li"> 46+ Inbuilt Addons Supported </li>
+								<li class="arm-feature-list-li"> <?php echo sanitize_text_field( $total_inbuilt_addon ); ?> Inbuilt Addons Supported </li>
 								<li class="arm-feature-list-li"> Sell Online Courses Like LMS </li>
 							</ul>
 							<ul>
-								<li class="arm-feature-list-li arm-feature-list-last"> 6 Months of Premium Support </li>
+								<li class="arm-feature-list-li arm-feature-list-last"> <?php echo sanitize_text_field( $support_period ); ?> of Premium Support </li>
 							</ul>
 							
 						</div>

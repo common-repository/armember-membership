@@ -110,7 +110,7 @@ define( 'MEMBERSHIPLITE_UPLOAD_URL', $arm_lite_upload_url );
 
 /* Defining Membership Plugin Version */
 global $arm_lite_version;
-$arm_lite_version = '4.0.47';
+$arm_lite_version = '4.0.48';
 define( 'MEMBERSHIPLITE_VERSION', $arm_lite_version );
 
 global $arm_lite_ajaxurl;
@@ -3611,7 +3611,7 @@ escClose : false
 
 		$arm_change_log = array(
 			'show_critical_title' => 1,
-			'critical_title'      => 'Version 4.0.47 Changes',
+			'critical_title'      => 'Version 4.0.48 Changes',
 			'critical'            => array(
 				'Minor bug fixes.',
 			),

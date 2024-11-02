@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ARMember Lite - Membership Plugin v4.0.47\n"
+"Project-Id-Version: ARMember Lite - Membership Plugin v4.0.48\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-21 04:47+0000\n"
-"PO-Revision-Date: 2024-10-23 09:52:41+0000\n"
+"PO-Revision-Date: 2024-10-30 04:12:06+0000\n"
 "Last-Translator: \n"
 "Language-Team: Chinese (China)\n"
 "MIME-Version: 1.0\n"
@@ -14661,7 +14661,7 @@ msgstr "如果用户%s不在%s试用期内"
 msgid "No email template found."
 msgstr "未找到电子邮件模板。"
 
-#: core/views/arm_growth_plugins.php:74
+#: core/views/arm_growth_plugins.php:97
 #@ armember-membership
 msgid "Upgrade to ARMember Pro"
 msgstr "升级到 ARMember Pro"
@@ -15727,6 +15727,6 @@ msgstr "请安装 Fusion Builder 或 Avada 主题并尝试激活此插件。"
 #. translators: plugin header field 'Version'
 #: armember-membership.php:0
 #@ armember-membership
-msgid "4.0.47"
-msgstr "4.0.47"
+msgid "4.0.48"
+msgstr "4.0.48"
 
